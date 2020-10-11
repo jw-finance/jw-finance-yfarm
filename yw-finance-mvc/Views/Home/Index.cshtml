@@ -1,0 +1,120 @@
+﻿@using Microsoft.Extensions.Options
+@using web_mvc.Helpers
+@using web_mvc.Options
+@{
+    ViewData["Title"] = "Farm Pools";
+    Layout = "~/Views/Shared/_Layout.Metronic.cshtml";
+}
+@inject IOptions<Pool1Settings> Pool1Options;
+
+<!--begin::Entry-->
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container">
+        <!--begin::Row-->
+        <div class="row justify-content-center" style="margin-top: 50px">
+            <!--begin::Col-->
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <!--begin::Card-->
+                <div class="card card-custom gutter-b card-stretch">
+                    <!--begin::Body-->
+                    <div class="card-body pt-4">
+                        <!--begin::User-->
+                        <div class="d-flex align-items-center mb-7">
+                            <!--begin::Pic-->
+                            <div class="flex-shrink-0 mr-4">
+                                <div class="symbol symbol-circle symbol-lg-75">
+                                    <img src="~/_metronic/media/logos/icon.png" alt="image" />
+                                </div>
+                            </div>
+                            <!--end::Pic-->
+                            <!--begin::Title-->
+                            <div class="d-flex flex-column">
+                                <a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">EARN @Pool1Options.Value.RewardContract.Name</a>
+                                <span class="text-muted font-weight-bold">DEPOSIT @Pool1Options.Value.StakeContract.Name</span>
+                            </div>
+                            <!--end::Title-->
+                        </div>
+                        <!--end::User-->
+                        <!--begin::Info-->
+                        <div class="mb-7">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-dark-75 font-weight-bolder mr-2">Pool Reward:</span>
+                                <span class="text-muted text-hover-primary">@Pool1Options.Value.PoolReward @Pool1Options.Value.RewardContract.Symbol</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-cente my-1">
+                                <span class="text-dark-75 font-weight-bolder mr-2">Life time:</span>
+                                <span class="text-muted text-hover-primary">@Pool1Options.Value.PoolDurationHours hours</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-dark-75 font-weight-bolder mr-2">Started At:</span>
+                                <span class="text-muted font-weight-bold">@DateTimeHelper.UnixTimeStampToDateTime(Pool1Options.Value.AvailableAt) (UTC)</span>
+                            </div>
+                        </div>
+                        <!--end::Info-->
+                        @if (DateTime.UtcNow < DateTimeHelper.UnixTimeStampToDateTime(Pool1Options.Value.AvailableAt))
+                        {
+                            <a href="#" class="btn btn-block btn-sm btn-dark font-weight-bolder text-uppercase py-4 select-pool disabled">Pool Start Soon</a>
+                        }
+                        else
+                        {
+                            <a asp-controller="Pool1" asp-action="Index" class="btn btn-block btn-sm btn-dark font-weight-bolder text-uppercase py-4 select-pool">Select</a>
+                        }
+                    </div>
+                    <!--end::Body-->
+                </div>
+                <!--end:: Card-->
+            </div>
+            <!--end::Col-->
+            <!--begin::Col-->
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                <!--begin::Card-->
+                <div class="card card-custom gutter-b card-stretch">
+                    <!--begin::Body-->
+                    <div class="card-body pt-4">
+                        <!--begin::User-->
+                        <div class="d-flex align-items-center mb-7">
+                            <!--begin::Pic-->
+                            <div class="flex-shrink-0 mr-4">
+                                <div class="symbol symbol-circle symbol-lg-75">
+                                    <img src="~/_metronic/media/logos/icon.png" alt="image" />
+                                </div>
+                            </div>
+                            <!--end::Pic-->
+                            <!--begin::Title-->
+                            <div class="d-flex flex-column">
+                                <a href="#" class="text-dark font-weight-bold text-hover-primary font-size-h4 mb-0">EARN @Pool1Options.Value.RewardContract.Name</a>
+                                <span class="text-muted font-weight-bold">DEPOSIT ???</span>
+                            </div>
+                            <!--end::Title-->
+                        </div>
+                        <!--end::User-->
+                        <!--begin::Info-->
+                        <div class="mb-7">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-dark-75 font-weight-bolder mr-2">Pool Reward:</span>
+                                <span class="text-muted text-hover-primary">Coming soon</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-cente my-1">
+                                <span class="text-dark-75 font-weight-bolder mr-2">Life time:</span>
+                                <span class="text-muted text-hover-primary">Coming soon</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-dark-75 font-weight-bolder mr-2">Started At:</span>
+                                <span class="text-muted font-weight-bold">Coming soon</span>
+                            </div>
+                        </div>
+                        <!--end::Info-->
+                        <a href="#" class="btn btn-block btn-sm btn-dark font-weight-bolder text-uppercase py-4 disabled">Coming soon</a>
+                    </div>
+                    <!--end::Body-->
+                </div>
+                <!--end:: Card-->
+            </div>
+            <!--end::Col-->
+        </div>
+        <!--end::Row-->
+    </div>
+    <!--end::Container-->
+</div>
+<!--end::Entry-->

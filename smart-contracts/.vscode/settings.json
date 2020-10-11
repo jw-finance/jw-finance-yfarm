@@ -1,0 +1,15 @@
+{
+  "cSpell.words": [
+    "CLGT",
+    "IERC",
+    "YFCC",
+    "bytecode",
+    "codehash",
+    "concat",
+    "extcodehash",
+    "solhint"
+  ],
+  "solidity.enabledAsYouTypeCompilationErrorCheck": true,
+  "solidity.validationDelay": 1500,
+  "editor.formatOnSave": true
+}

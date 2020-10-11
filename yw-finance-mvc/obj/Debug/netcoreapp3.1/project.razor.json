@@ -1,0 +1,90 @@
+{
+  "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\web-mvc.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "3.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 900
+  },
+  "RootNamespace": "web_mvc",
+  "Documents": [
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Shared\\_metronic\\_MobileHeader.cshtml",
+      "TargetPath": "Views\\Shared\\_metronic\\_MobileHeader.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Pool1\\Index.cshtml",
+      "TargetPath": "Views\\Pool1\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Shared\\_metronic\\_Header.cshtml",
+      "TargetPath": "Views\\Shared\\_metronic\\_Header.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Shared\\_metronic\\_Scrolltop.cshtml",
+      "TargetPath": "Views\\Shared\\_metronic\\_Scrolltop.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Shared\\_Layout.Metronic.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.Metronic.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Shared\\_metronic\\_Footer.cshtml",
+      "TargetPath": "Views\\Shared\\_metronic\\_Footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Home\\_ProgressModal.cshtml",
+      "TargetPath": "Views\\Home\\_ProgressModal.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Pool1\\_StakeForm.cshtml",
+      "TargetPath": "Views\\Pool1\\_StakeForm.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Workspace\\DeFi\\jonie-walker\\jw-finance-yfarm\\yw-finance-mvc\\Views\\Shared\\_metronic\\_Loader.cshtml",
+      "TargetPath": "Views\\Shared\\_metronic\\_Loader.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}
