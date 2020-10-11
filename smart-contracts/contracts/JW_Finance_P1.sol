@@ -756,34 +756,12 @@ contract YW_Finance_P1 is Ownable {
 		address indexed _to,
 		uint256 _amount
 	);
-	event TransferRewardsToPoolContract(
-		address indexed _from,
-		address indexed _to,
-		address indexed _rewardToken,
-		uint256 _amount
-	);
 	event StakeSuccessful(
 		address indexed _stakeholder,
 		uint256 _amount,
 		uint256 _timestamp
 	);
-	event UnstakeSuccessful(address indexed _stakeholder, uint256 _timestamp);
 	event RewardClaimSuccessful(
-		address indexed _stakeholder,
-		uint256 _amount,
-		uint256 _timestamp
-	);
-	event RewardDistributeSuccessful(
-		address indexed _stakeholder,
-		uint256 _amount,
-		uint256 _timestamp
-	);
-	event RewardDistributeIgnore(
-		address indexed _stakeholder,
-		uint256 _expiredAt,
-		uint256 _timestamp
-	);
-	event ReferRewardDistributeSuccessful(
 		address indexed _stakeholder,
 		uint256 _amount,
 		uint256 _timestamp
@@ -1120,7 +1098,7 @@ contract YW_Finance_P1 is Ownable {
 
 	/**
 	 * @notice A method to withdraw stake tokens fee to pay for pool development team
-	 * @param toAddress Add ress to receive deposit fee
+	 * @param toAddress Address to receive deposit fee
 	 */
 	function withdrawDepositFee(address toAddress) public onlyOwner {
 		uint256 balanceOfPool = _stakeToken.balanceOf(pool);
